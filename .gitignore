@@ -2,3 +2,24 @@ chromium/
 go/telemetry/
 google-chrome/
 GIMP/
+Code - OSS/
+VirtualBox/
+lxsession/
+libvirt
+kde.org
+dconf
+github-copilot/
+.mozilla/
+Meltytech/
+QtProject.conf
+dolphinrc
+gtk-*
+pavucontrol.ini
+mimeapps.list
+pulse/
+virt-viewer/
+user-dirs.*
+gwenviewrc
+htop/
+hyprland-xdg-terminals.list
+xdg-terminals.list
