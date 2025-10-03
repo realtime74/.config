@@ -3,7 +3,9 @@
   "position": "top",
   "height":30,
   "spacing": 5,
-  "modules-right": [ "network", "cpu", "battery", "clock" ], 
+  "modules-left": [ "network" ], 
+  "modules-center": [ "hyprland/workspaces" ], 
+  "modules-right": [ "cpu", "battery", "clock" ], 
   "cpu": {
       "interval": 5,
       "format": "{icon}{load}",
@@ -12,7 +14,7 @@
   "network": {
       "interval": 5,
       "interface": "wlan0",
-      "format-wifi": " {bandwidthUpBytes}   {bandwidthDownBytes}    󰖩 {signalStrength}%  ",
+      "format-wifi": "  {bandwidthUpBytes}   {bandwidthDownBytes} 󰖩 {signalStrength}%  ",
       "format-disconnected": "󰖪    "
   },
   "battery": {
@@ -28,5 +30,14 @@
   },
   "bluetooth": {
     "format": " "
+  },
+  "hyprland/workspaces": {
+      "format": "{icon}",
+      "format-icons": { 
+          "*": " ",
+      },
+      "persistent-workspaces": {
+          "*": [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+      }
   }
 }
