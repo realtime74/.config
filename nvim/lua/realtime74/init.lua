@@ -7,3 +7,7 @@ vim.o.softtabstop = 4
 vim.o.expandtab = true
 
 vim.cmd.colorscheme("catppuccin")
+
+vim.o.number = true
+vim.o.clipboard = "unnamedplus"
+
