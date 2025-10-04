@@ -8,18 +8,18 @@
   "modules-right": [ "cpu", "battery", "clock" ], 
   "cpu": {
       "interval": 5,
-      "format": "{icon}{load}",
+      "format": "{icon} {load}",
       "format-icons": ["󰾆 ", "󰾅 ", "󰓅 "],
   },
   "network": {
       "interval": 5,
-      "interface": "wlan0",
-      "format-wifi": "  {bandwidthUpBytes}   {bandwidthDownBytes} 󰖩 {signalStrength}%  ",
-      "format-disconnected": "󰖪    "
+      "interface": "wlp6s0",
+      "format-wifi": "    {bandwidthUpBytes}     {bandwidthDownBytes}      {signalStrength}%  ",
+      "format-disconnected": "      "
   },
   "battery": {
       "interval": 5,
-      "format": "  {icon}{capacity}%   ",
+      "format": "  {icon} {capacity}%   ",
       "format-charging": "  󰂆 {capacity}%   ",
       "format-icons": [ " ", " ", " ", " ", " " ]
   },
