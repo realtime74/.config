@@ -5,6 +5,7 @@ export PATH=$PATH:$GOPATH
 export EDITOR=nvim
 
 export QT_SCALE_FACTOR=2
+
 alias vim=nvim
 alias hc="nvim ~/.config/hypr"
 
