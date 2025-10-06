@@ -25,6 +25,9 @@ require('pckr').add{
   { "catppuccin/nvim", name="catppuccin" },
   { "kien/ctrlp.vim" },
   { "nvim-tree/nvim-tree.lua" },
+  { "nvim-lua/plenary.nvim" },
+  { "ThePrimeagen/harpoon", branch="harpoon2" },
 }
 
 require('nvim-tree').setup()
+
