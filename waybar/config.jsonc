@@ -3,9 +3,28 @@
   "position": "top",
   "height":30,
   "spacing": 5,
-  "modules-left": [ "network" ], 
+  "modules-left": [ "network"  ], 
   "modules-center": [ "hyprland/workspaces" ], 
-  "modules-right": [ "cpu", "battery", "clock" ], 
+  "modules-right": [ "pulseaudio", "cpu", "battery", "clock" ], 
+    "pulseaudio": {
+        "format": "{volume}% {icon}  ",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+            "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "",
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "phone-muted": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol"
+    },
   "cpu": {
       "interval": 5,
       "format": "{icon} {load}",
@@ -14,7 +33,7 @@
   "network": {
       "interval": 5,
       "interface": "wlp6s0",
-      "format-wifi": "    {bandwidthUpBytes}     {bandwidthDownBytes}      {signalStrength}%  ",
+      "format-wifi": "    {bandwidthUpBytes}     {bandwidthDownBytes}       {signalStrength}%  ",
       "format-disconnected": "      "
   },
   "battery": {
@@ -29,7 +48,7 @@
 	  "format": "{:L%d %b - %H:%M}   "
   },
   "bluetooth": {
-    "format": " "
+    "format": " --   --"
   },
   "hyprland/workspaces": {
       "format": "{icon}",
